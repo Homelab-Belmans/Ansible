@@ -8,8 +8,9 @@
         - name: check disk space available
           shell: df -h / | awk 'NR==2 {print $5}'
           register: disk_usage
-        - debug:
-          var: disk_usage
+        - name: print value
+          debug:
+            var: disk_usage
     # - name: send discord message when disk space is over 80%
     #   uri:
     #     url: "your-webhook"
