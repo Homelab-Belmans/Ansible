@@ -16,7 +16,7 @@
             url: "https://ntfy.belmans.tk/ansible"
             method: POST
             body: "VM {{ inventory_hostname }} Sunning out of diskspace!"
-          when: disk_usage.stdout[:-1]|int > 80
+          when: disk_usage.stdout[:-1]|int > 50
     # - name: send discord message when disk space is over 80%
     #   uri:
     #     url: "your-webhook"
