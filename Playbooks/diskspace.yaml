@@ -11,7 +11,7 @@
         - name: print value
           debug:
             msg: "{{ disk_usage.stdout_lines[0] }}"
-        - name: Send ntfy.sh update
+        - name: Send notify via NTFY (channel ansible)
           uri:
             url: "https://ntfy.belmans.tk/ansible"
             method: POST
