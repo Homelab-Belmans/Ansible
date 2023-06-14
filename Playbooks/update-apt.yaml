@@ -8,3 +8,8 @@
           upgrade: yes
           update_cache: yes
           state: latest
+      - name: Send notify via NTFY (channel apt-updates)
+        uri:
+          url: "https://ntfy.belmans.tk/apt-updates"
+          method: POST
+          body: "All updated"
