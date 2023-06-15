@@ -12,4 +12,4 @@
         uri:
           url: "https://ntfy.belmans.tk/apt-updates"
           method: POST
-          body: "All updated"
+          body: "{{ inventory_hostname }} updated"
