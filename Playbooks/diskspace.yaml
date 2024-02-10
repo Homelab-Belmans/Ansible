@@ -13,7 +13,7 @@
             msg: "{{ disk_usage.stdout_lines[0] }}"
         - name: Send notify via NTFY (channel ansible)
           uri:
-            url: "https://ntfy.belmans.tk/ansible"
+            url: "https://ntfy.belmans.app/ansible"
             method: POST
             body: "VM {{ inventory_hostname }} running out of diskspace!"
           when: disk_usage.stdout[:-1]|int > 80
