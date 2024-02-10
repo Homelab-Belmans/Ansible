@@ -10,6 +10,6 @@
           state: latest
       - name: Send notify via NTFY (channel apt-updates)
         uri:
-          url: "https://ntfy.belmans.tk/apt-updates"
+          url: "https://ntfy.belmans.app/apt-updates"
           method: POST
           body: "{{ inventory_hostname }} updated"
