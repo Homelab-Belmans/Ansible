@@ -1,7 +1,7 @@
 ---
 
 - name: Update Immich Containers
-  hosts: "Immich_VM's"
+  hosts: "immich"
   become: true
   tasks:
     - name: Pull latest Immich image
